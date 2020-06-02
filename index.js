@@ -55,7 +55,7 @@ module.exports = (moduleObject, options) => {
 		disableGlobbing: true,
 		ignored: [
 			/(^|[/\\])\../, // Dotfiles
-			'node_modules',
+			//'node_modules',
 			'**/*.map'
 		].concat(options.ignore)
 	});
